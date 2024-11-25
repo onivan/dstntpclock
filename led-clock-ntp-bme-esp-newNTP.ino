@@ -1,11 +1,11 @@
 #ifndef STASSID
-#define STASSID "asushotyn"                            // set your SSID
-#define STAPSK  "hotyn777"                        // set your wifi password
+#define STASSID "yourSSID"                            // set your SSID
+#define STAPSK  "yourWIFIPASSWORD"                        // set your wifi password
 #endif
 
 /* Configuration of NTP */
-#define MY_NTP_SERVER "ua.pool.ntp.org"           
-#define MY_TZ "EET-2EEST,M3.5.0/3,M10.5.0/4"   
+#define MY_NTP_SERVER "ua.pool.ntp.org"           // ENTER YOUR CLOSEST NTP SERVER
+#define MY_TZ "EET-2EEST,M3.5.0/3,M10.5.0/4"   // ENTER YOUR LOCATION'S TZ ABBREVIATION FROM https://remotemonitoringsystems.ca/time-zone-abbreviations.php OR GOOGLE FOR IT 
 
 bool ntpGood = true;
 int updateFails = 0;
@@ -36,7 +36,7 @@ unsigned long bmeReinit, bmeReinitDelay = 1000;
 
 
 #define SEALEVELPRESSURE_HPA (1013.25)
-#define ALTITUDESEALEVEL_M (186)
+#define ALTITUDESEALEVEL_M (186)  // ENTER YOUR LOCATION'S ALTITUDE OVER THE SEA LEVEL
 
 //Adafruit_BME280 bme; // I2C
   
